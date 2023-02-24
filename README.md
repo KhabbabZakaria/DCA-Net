@@ -1,4 +1,7 @@
 # A Co-Interactive Transformer for Joint Slot Filling and Intent Detection
+
+(Check data_utl/config.py to change dataset. Use snips for only internt detecion, not slot filing. Atis dataset for both intent detecion and slot filing)
+
 This repository contains the PyTorch implementation of the paper: 
 
 **A Co-Interactive Transformer for Joint Slot Filling and Intent Detection**. [Libo Qin](http://ir.hit.edu.cn/~lbqin/), [TaiLu Liu](https://github.com/labage), [Wanxiang Che](http://ir.hit.edu.cn/~car/chinese.htm), [bingbing Kang](https://github.com/kangbrilliant), [Sendong Zhao](https://sites.google.com/site/zhaosendong/), [Ting Liu](http://ir.hit.edu.cn/~liuting/).
