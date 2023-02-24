@@ -143,15 +143,15 @@ def run_train(train_data_file, dev_data_file):
 
         intent_acc, slot_f1, sent_acc = dev(model, dev_loader, idx2slot)
 
-        if slot_f1 > best_slot_f1[1] :
+        '''if slot_f1 > best_slot_f1[1] :
             best_slot_f1 = [sent_acc, slot_f1, intent_acc, epoch]
-            torch.save(model, config.model_save_dir + config.model_path)
+            torch.save(model, config.model_save_dir + config.model_path)'''
         if intent_acc > best_intent_acc[2]:
             torch.save(model, config.model_save_dir + config.model_path)
             best_intent_acc = [sent_acc, slot_f1, intent_acc, epoch]
-        if sent_acc > best_sent_acc[0]:
+        '''if sent_acc > best_sent_acc[0]:
             torch.save(model, config.model_save_dir + config.model_path)
-            best_sent_acc = [sent_acc, slot_f1, intent_acc, epoch]
+            best_sent_acc = [sent_acc, slot_f1, intent_acc, epoch]'''
         scheduler.step()
     print("best_slot_f1:", best_slot_f1)
     print("best_intent_acc:", best_intent_acc)
